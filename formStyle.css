@@ -1,0 +1,129 @@
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: rgb(3, 2, 2);
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: sans-serif;
+  border-radius: 6px;
+}
+
+.card {
+  background-color: #ddd;
+  padding: 1rem;
+  border-radius: 5px;
+  border: 1px solid #bbb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.left {
+  width: 25vw;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.left img {
+  width: inherit;
+  object-fit: cover;
+  transform: scale(2.3);
+}
+
+.right #username {
+  display: flex;
+  gap: 1rem;
+  margin-right: 1rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 0 0;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="number"] ,select,option,form input[type="password"]{
+  /* display: none; */
+  width: 100%;
+  outline: none;
+  background: none;
+  border: none;
+  border-bottom: 2px solid #000;
+  padding: 10px 0;
+  margin: 5px 0;
+}
+
+form input[type="text"]:valid{
+  border-bottom: 2px solid #000
+}
+form input[type="email"]:valid{
+  border-bottom:2px solid #000;
+}
+form input[type="number"]:valid{
+  border-bottom: 2px solid #000;
+}
+form input[type="password"]:valid{
+  border-bottom: 2px solid #000;
+}
+
+
+/* css for invalid  */
+form input[type="text"]:invalid{
+  border-bottom: 2px solid red;
+}
+form input[type="email"]:invalid{
+  border-bottom: 2px solid red;
+}
+form input[type="number"]:invalid{
+  border-bottom: 2px solid red;
+}
+form input[type="password"]:invalid{
+  border-bottom: 2px solid red;
+}
+
+
+#submitButton  {
+  background-color: #f25;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  border: none;
+  width: min-content;
+  padding: 15px;
+  margin-bottom: 0;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#submitButton:hover {
+  background-color: #f45;
+}
+
+
+
+
+@media screen and (max-width: 700px) {
+  .card {
+    flex-direction: column;
+  }
+  
+  .left {
+    width: 60vw;
+    height: 40vh;
+  }
+}
