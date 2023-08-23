@@ -28,7 +28,7 @@ username.addEventListener("input", (e) => {
 //zip valiadte
 
 zipCode.addEventListener("input", function () {
-  if (zipInput.value.trim() === "") {
+  if (zipCode.value.trim() === "") {
     zipInput.setCustomValidity("Please enter a zipCode");
   } else {
     zipCode.setCustomValidity("");
