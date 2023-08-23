@@ -31,7 +31,7 @@ zipCode.addEventListener("input", function () {
   if (zipInput.value.trim() === "") {
     zipInput.setCustomValidity("Please enter a zipCode");
   } else {
-    zipInput.setCustomValidity("");
+    zipCode.setCustomValidity("");
   }
 });
 // email validate
